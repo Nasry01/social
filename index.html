@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Sosial & Digital Showcase - Nasry B</title>
+  
+  <!-- Icon FontAwesome untuk Logo Media Sosial -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* RESET & DASAR */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0d131d; /* Warna background dark disesuaikan dengan Lobby */
+      color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    /* TOMBOL KEMBALI KE LOBBY UTAMA */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+      font-weight: 500;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateX(-5px);
+      color: #7dd3fc;
+    }
+
+    /* HEADER HALAMAN */
+    .page-title {
+      font-size: 1.8rem;
+      color: #f8fafc;
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    /* SUB-JUDUL KATEGORI */
+    .section-label {
+      color: #38bdf8;
+      font-size: 1.1rem;
+      margin: 30px 0 15px 0;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 8px;
+    }
+
+    /* LAYOUT GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    /* STYLING CARD KOTAK SOSIAL MEDIA */
+    .card {
+      background-color: #162032;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+      box-shadow: 0 8px 18px rgba(56, 189, 248, 0.15);
+    }
+
+    /* WARNA ICON KHUSUS PER PLATFORM */
+    .card i {
+      font-size: 2.2rem;
+      width: 42px;
+      text-align: center;
+    }
+
+    .spotify i { color: #1db954; }
+    .youtube i { color: #ff0000; }
+    .tiktok i { color: #25f4ee; }
+    .instagram i { color: #e1306c; }
+
+    /* TEKS DI DALAM CARD */
+    .card-info h4 {
+      font-size: 1rem;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+
+    .card-info p {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Tombol Kembali ke Website Utama (Lobby) -->
+    <a href="https://nasry01.github.io/" class="back-btn">
+      <i class="fas fa-arrow-left"></i> Kembali ke Utama (Lobby)
+    </a>
+
+    <h1 class="page-title">🌐 Media Sosial & Digital Showcase</h1>
+    <p class="page-subtitle">Kumpulan platform resmi tempat saya membagikan karya musik, video kreatif, eksplorasi IT, dan aktivitas visual.</p>
+
+    <!-- KATEGORI MUSIK & AUDIO -->
+    <h3 class="section-label">🎧 Musik & Audio</h3>
+    <div class="grid">
+      
+      <!-- Spotify -->
+      <a href="URL_SPOTIFY_KAMU" target="_blank" class="card spotify">
+        <i class="fab fa-spotify"></i>
+        <div class="card-info">
+          <h4>Spotify - Nasry B</h4>
+          <p>Official Artist Page & Rapper/Musisi</p>
+        </div>
+      </a>
+
+      <!-- YouTube Channel 1 (Musik) -->
+      <a href="URL_YOUTUBE_MUSIK_KAMU" target="_blank" class="card youtube">
+        <i class="fab fa-youtube"></i>
+        <div class="card-info">
+          <h4>YouTube - Music & Audio</h4>
+          <p>Rapping, Beats, & FL Studio Music Production</p>
+        </div>
+      </a>
+
+      <!-- TikTok 1 (Musik) -->
+      <a href="URL_TIKTOK_MUSIK_KAMU" target="_blank" class="card tiktok">
+        <i class="fab fa-tiktok"></i>
+        <div class="card-info">
+          <h4>TikTok - Music Clips</h4>
+          <p>Short music teasers, freestyles & audio clips</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- KATEGORI TECH, DESIGN & CREATIVE CONTENT -->
+    <h3 class="section-label">💻 Tech, Design & Creative Content</h3>
+    <div class="grid">
+
+      <!-- YouTube Channel 2 (Tech & Design) -->
+      <a href="URL_YOUTUBE_TECH_KAMU" target="_blank" class="card youtube">
+        <i class="fab fa-youtube"></i>
+        <div class="card-info">
+          <h4>YouTube - Tech & Design</h4>
+          <p>Tutorial, UI/UX Design & Video Editing Process</p>
+        </div>
+      </a>
+
+      <!-- TikTok 2 (Creative / Personal) -->
+      <a href="URL_TIKTOK_TECH_KAMU" target="_blank" class="card tiktok">
+        <i class="fab fa-tiktok"></i>
+        <div class="card-info">
+          <h4>TikTok - Creative & Daily</h4>
+          <p>Editing tips, creative showcase & behind the scene</p>
+        </div>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/mafinnasry_/" target="_blank" class="card instagram">
+        <i class="fab fa-instagram"></i>
+        <div class="card-info">
+          <h4>Instagram - @mafinnasry_</h4>
+          <p>Personal Portfolio, Visual Design & Updates</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
